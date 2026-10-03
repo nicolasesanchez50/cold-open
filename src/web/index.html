@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cold-Open — taste-matched partnership leads</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.5 system-ui, sans-serif; max-width: 880px; margin: 2rem auto; padding: 0 1rem; }
+  h1 { font-size: 1.5rem; }
+  form { display: flex; gap: .5rem; margin: 1rem 0 1.5rem; }
+  input { padding: .5rem .75rem; font-size: 1rem; border: 1px solid #999; border-radius: 6px; }
+  input[name=brand] { flex: 2; }
+  input[name=category] { flex: 1; }
+  button { padding: .5rem 1.25rem; font-size: 1rem; border-radius: 6px; border: 0; background: #444; color: #fff; cursor: pointer; }
+  .lead { border: 1px solid #8885; border-radius: 8px; padding: 1rem; margin: .75rem 0; }
+  .lead h3 { margin: 0 0 .25rem; font-size: 1.1rem; }
+  .meta { color: #777; font-size: .85rem; margin-bottom: .5rem; }
+  .caveats { margin-top: 2rem; padding: 1rem; background: #8881; border-radius: 8px; white-space: pre-line; font-size: .9rem; }
+  #status { color: #777; }
+</style>
+</head>
+<body>
+<h1>Cold-Open</h1>
+<p>Taste-matched partnership leads, powered by Qloo aggregate affinity data. Enter a brand to surface non-obvious collaboration, artist, and event partners — each with the evidence behind it.</p>
+<form id="f">
+  <input name="brand" placeholder="Brand or product (e.g. Mezcal)" required>
+  <input name="category" placeholder="Category (optional)">
+  <button>Generate leads</button>
+</form>
+<div id="status"></div>
+<div id="out"></div>
+<script>
+const f = document.getElementById('f');
+const out = document.getElementById('out');
+const status = document.getElementById('status');
+f.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const brand = f.brand.value.trim();
+  const category = f.category.value.trim();
+  out.innerHTML = '';
+  status.textContent = 'Querying Qloo…';
+  try {
+    const r = await fetch(`/api/leads?brand=${encodeURIComponent(brand)}&category=${encodeURIComponent(category)}`);
+    const data = await r.json();
+    if (!r.ok) throw new Error(data.error || r.statusText);
+    status.textContent = `Resolved "${data.subject.name}" → Qloo tag ${data.subject.resolved_tag.id}`;
+    out.innerHTML = data.leads.map(l => `
+      <div class="lead">
+        <h3>#${l.rank} ${l.name}</h3>
+        <div class="meta">${l.bucket.replace('_',' ')} · affinity ${l.affinity.toFixed(2)} · ${l.category}</div>
+        <p>${l.pitch}</p>
+      </div>`).join('') + `<div class="caveats">${data.caveats}</div>`;
+  } catch (err) {
+    status.textContent = 'Error: ' + err.message;
+  }
+});
+</script>
+</body>
+</html>

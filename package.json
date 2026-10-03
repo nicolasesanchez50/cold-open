@@ -1,0 +1,21 @@
+{
+  "name": "cold-open",
+  "version": "0.1.0",
+  "description": "Taste-matched partnership lead generation powered by Qloo",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "demo": "node src/web/server.mjs 3737",
+    "cli": "node src/agent/cli.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22.19.0"
+  }
+}
