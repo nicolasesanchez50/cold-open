@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cold-Open — taste-matched partnership leads (Qloo Agentic Hackathon)</title>
+<meta name="description" content="Cold-Open turns a brand into ranked, evidence-cited partnership leads using Qloo's cross-category taste affinity data.">
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.5 system-ui, sans-serif; max-width: 880px; margin: 2rem auto; padding: 0 1rem; }
+  h1 { font-size: 1.5rem; }
+  form { display: flex; gap: .5rem; margin: 1rem 0 1.5rem; flex-wrap: wrap; }
+  input { padding: .5rem .75rem; font-size: 1rem; border: 1px solid #999; border-radius: 6px; }
+  input[name=brand] { flex: 2; min-width: 12rem; }
+  input[name=category] { flex: 1; min-width: 8rem; }
+  input[name=key] { flex: 2; min-width: 14rem; font-family: ui-monospace, monospace; }
+  button { padding: .5rem 1.25rem; font-size: 1rem; border-radius: 6px; border: 0; background: #444; color: #fff; cursor: pointer; }
+  .lead { border: 1px solid #8885; border-radius: 8px; padding: 1rem; margin: .75rem 0; }
+  .lead h3 { margin: 0 0 .25rem; font-size: 1.1rem; }
+  .meta { color: #777; font-size: .85rem; margin-bottom: .5rem; }
+  .caveats { margin-top: 2rem; padding: 1rem; background: #8881; border-radius: 8px; white-space: pre-line; font-size: .9rem; }
+  #status { color: #777; }
+  #mode-banner { display: block; padding: .5rem .75rem; border-radius: 6px; font-size: .9rem; margin: 1rem 0; }
+  #mode-banner[data-mode="fixture"] { background: #8a6d1d33; border: 1px solid #8a6d1d; }
+  #mode-banner[data-mode="live"] { background: #1d6d3a33; border: 1px solid #1d6d3a; }
+  #key-form { margin-top: 2rem; padding-top: 1rem; border-top: 1px dashed #8886; }
+  #key-form label { display: block; font-size: .9rem; color: #777; margin-bottom: .35rem; }
+  footer { margin-top: 2.5rem; font-size: .85rem; color: #777; }
+</style>
+</head>
+<body>
+<h1>Cold-Open</h1>
+<p>Taste-matched partnership leads, powered by Qloo aggregate affinity data. Enter a brand to surface non-obvious collaboration, artist, and event partners — each with the evidence behind it.</p>
+
+<div id="mode-banner"></div>
+
+<form id="f">
+  <input name="brand" placeholder="Brand or product (e.g. Mezcal)" required>
+  <input name="category" placeholder="Category (optional)">
+  <button>Generate leads</button>
+</form>
+<div id="status"></div>
+<div id="out"></div>
+
+<form id="key-form">
+  <label for="qloo-key">Qloo event API key (stored in this browser only; required for live data)</label>
+  <input id="qloo-key" name="key" type="text" placeholder="paste your hackathon API key" autocomplete="off">
+  <button>Save key</button>
+</form>
+
+<footer>
+  Built for the <a href="https://qloo.devpost.com/">Qloo Agentic Hackathon</a>.
+  Source: <a href="https://github.com/nicolasesanchez50/cold-open">github.com/nicolasesanchez50/cold-open</a>.
+  Affinities are aggregate group-level correlations — see the caveats attached to every result set.
+</footer>
+
+<script type="module" src="./src/web/app.mjs"></script>
+</body>
+</html>
