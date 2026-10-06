@@ -1,0 +1,39 @@
+{
+  "tags": [
+    {
+      "id": "urn:tag:competitor_brand:qloo:oatly",
+      "name": "Oatly",
+      "category": "urn:tag:competitor_brand:qloo",
+      "type": "urn:tag:competitor_brand:qloo",
+      "popularity": 0.9744230370173373
+    },
+    {
+      "id": "urn:tag:similar_brand:qloo:oatly",
+      "name": "Oatly",
+      "category": "urn:tag:similar_brand:qloo",
+      "type": "urn:tag:similar_brand:qloo",
+      "popularity": 0.9932398287580371
+    },
+    {
+      "id": "urn:tag:amenity:qloo:oat_milk",
+      "name": "Oat Milk",
+      "category": "urn:tag:amenity:qloo",
+      "type": "urn:tag:amenity:qloo",
+      "popularity": 0.9849267895524998
+    },
+    {
+      "id": "urn:tag:amenity:qloo:oat_milk_options",
+      "name": "Oat Milk Options",
+      "category": "urn:tag:amenity:qloo",
+      "type": "urn:tag:amenity:qloo",
+      "popularity": 0.9720475126858261
+    },
+    {
+      "id": "urn:tag:product_service:qloo:oat_milk",
+      "name": "Oat Milk",
+      "category": "urn:tag:product_service:qloo",
+      "type": "urn:tag:product_service:qloo",
+      "popularity": 0.9464705497031636
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "recommendations": [
+    {
+      "name": "Puerto Madryn",
+      "affinity": 0.9792078815770201,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Tigre",
+      "affinity": 0.9779182871476912,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Salta",
+      "affinity": 0.9743333488333882,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Rosario",
+      "affinity": 0.9728608549380086,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Bahía Blanca",
+      "affinity": 0.9714310482262871,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "La Plata",
+      "affinity": 0.9708475353834192,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Bariloche",
+      "affinity": 0.9707211458171388,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Ushuaia",
+      "affinity": 0.9681047200664505,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Villa La Angostura",
+      "affinity": 0.9644357238312645,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Neuquén",
+      "affinity": 0.9626570582155166,
+      "category": "travel",
+      "evidence": null
+    }
+  ]
+}

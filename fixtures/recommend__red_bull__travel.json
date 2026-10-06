@@ -1,0 +1,64 @@
+{
+  "recommendations": [
+    {
+      "name": "Saas-Fee",
+      "affinity": 0.9345717356888847,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Saalbach-Hinterglemm",
+      "affinity": 0.9135202012557258,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Breuil-Cervinia",
+      "affinity": 0.9123694745409536,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Verbier",
+      "affinity": 0.9058822102069962,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Zermatt",
+      "affinity": 0.899466250661266,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Tignes",
+      "affinity": 0.8954449456708622,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Mayrhofen",
+      "affinity": 0.8947111365999874,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Livigno",
+      "affinity": 0.8935455661168815,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Lech",
+      "affinity": 0.8929904473427426,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Finale Ligure",
+      "affinity": 0.8899411749039414,
+      "category": "travel",
+      "evidence": null
+    }
+  ]
+}

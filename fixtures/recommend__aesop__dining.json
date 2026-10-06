@@ -1,0 +1,64 @@
+{
+  "recommendations": [
+    {
+      "name": "WIFE & HUSBAND",
+      "affinity": 0.9028178383390518,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "% ARABICA Kyoto Arashiyama",
+      "affinity": 0.8983899729565901,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "Fuglen Tokyo",
+      "affinity": 0.8978615164981274,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "Simply Better",
+      "affinity": 0.8976304935182469,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "Play Design Hotel 玩味旅舍",
+      "affinity": 0.8970684619914275,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "CAMELBACK sandwich&espresso",
+      "affinity": 0.8968035263775973,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "Lee Ufan Museum",
+      "affinity": 0.8958528333047394,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "003ARCHIVE",
+      "affinity": 0.8949960411401254,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "Xing Hua Lou",
+      "affinity": 0.8935582127459519,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "브리드인제주",
+      "affinity": 0.891748571917056,
+      "category": "dining",
+      "evidence": null
+    }
+  ]
+}

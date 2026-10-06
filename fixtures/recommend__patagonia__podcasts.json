@@ -1,0 +1,64 @@
+{
+  "recommendations": [
+    {
+      "name": "The Rich Roll Podcast",
+      "affinity": 0.9730964411963199,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "The Tim Ferriss Show",
+      "affinity": 0.9408311463697648,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "Boundless Life",
+      "affinity": 0.9247334567163938,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "FoundMyFitness",
+      "affinity": 0.9228470489386359,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "Finding Mastery with Dr. Michael Gervais",
+      "affinity": 0.910059940976724,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "Aubrey Marcus Podcast",
+      "affinity": 0.9096041168487422,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "The Proof with Simon Hill",
+      "affinity": 0.9044337736679765,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "The Human Upgrade with Dave Asprey",
+      "affinity": 0.903294661635258,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "For The Life Of Me",
+      "affinity": 0.9021642370936042,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "The Outlier Health Podcast",
+      "affinity": 0.8974106146371784,
+      "category": "podcasts",
+      "evidence": null
+    }
+  ]
+}

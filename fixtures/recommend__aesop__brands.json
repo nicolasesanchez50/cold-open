@@ -1,0 +1,64 @@
+{
+  "recommendations": [
+    {
+      "name": "Diptyque",
+      "affinity": 0.9488967349413672,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Mansur Gavriel",
+      "affinity": 0.9303185244843089,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Le Labo Fragrances",
+      "affinity": 0.928917044671543,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Rains",
+      "affinity": 0.9152664689135807,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "COS",
+      "affinity": 0.9137551927642645,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Marimekko",
+      "affinity": 0.912271048273639,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Être Cécile",
+      "affinity": 0.9087685881249642,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Acne Studios",
+      "affinity": 0.9079615901874936,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Ferm Living",
+      "affinity": 0.9045955155914845,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "La Garçonne",
+      "affinity": 0.9017532315700482,
+      "category": "brands",
+      "evidence": null
+    }
+  ]
+}

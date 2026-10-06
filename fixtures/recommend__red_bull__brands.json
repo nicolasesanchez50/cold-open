@@ -1,0 +1,64 @@
+{
+  "recommendations": [
+    {
+      "name": "GoPro",
+      "affinity": 0.9691678113937194,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Monster Energy",
+      "affinity": 0.967420517760016,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "DC Shoes",
+      "affinity": 0.9379939795532884,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Oakley",
+      "affinity": 0.9356497464040463,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Quiksilver",
+      "affinity": 0.9350111898011483,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Red Bull Racing",
+      "affinity": 0.9334021986329633,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Rockstar Energy Drink",
+      "affinity": 0.9302168893784141,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Supercross LIVE!",
+      "affinity": 0.9231528620825744,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Burton Snowboards",
+      "affinity": 0.9213505444905716,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Yamaha Racing",
+      "affinity": 0.9205608883044093,
+      "category": "brands",
+      "evidence": null
+    }
+  ]
+}

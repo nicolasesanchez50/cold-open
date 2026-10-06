@@ -1,0 +1,64 @@
+{
+  "recommendations": [
+    {
+      "name": "Point Brown",
+      "affinity": 0.9578283081112602,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "Space Needle",
+      "affinity": 0.9546992132559243,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "Uley's Cabin",
+      "affinity": 0.9526689019169825,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "Branded Rock Canyon",
+      "affinity": 0.9496954741080865,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "Paradise Guest Ranch",
+      "affinity": 0.9483127305677714,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "REI",
+      "affinity": 0.945004449598431,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "The Restaurant at Captain Whidbey",
+      "affinity": 0.9445136249607708,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "Fillmore Auditorium",
+      "affinity": 0.9437614390655642,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "Anthony's At Point Defiance",
+      "affinity": 0.9420049595667188,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "Portland Art Museum",
+      "affinity": 0.9412694165855283,
+      "category": "dining",
+      "evidence": null
+    }
+  ]
+}

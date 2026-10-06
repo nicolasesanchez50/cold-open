@@ -1,0 +1,39 @@
+{
+  "results": [
+    {
+      "name": "Mezcal",
+      "entity_id": "4251CA83-1586-42AF-99EA-0FA02A67F27C",
+      "types": [
+        "urn:entity:place"
+      ]
+    },
+    {
+      "name": "Mezcal",
+      "entity_id": "6525E62C-601E-4CCB-B3FB-DFE98BDB457E",
+      "types": [
+        "urn:entity:place"
+      ]
+    },
+    {
+      "name": "Mezcal",
+      "entity_id": "37F8286D-433E-43C1-8885-1E29DC64F7D2",
+      "types": [
+        "urn:entity:place"
+      ]
+    },
+    {
+      "name": "Mezcal",
+      "entity_id": "2E40CF3F-F4C7-493C-89E5-019EA9881AE9",
+      "types": [
+        "urn:entity:place"
+      ]
+    },
+    {
+      "name": "Mezcal",
+      "entity_id": "E4C860E3-4855-4DF3-AA2B-9E9818101A3E",
+      "types": [
+        "urn:entity:place"
+      ]
+    }
+  ]
+}

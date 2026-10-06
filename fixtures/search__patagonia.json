@@ -1,0 +1,39 @@
+{
+  "results": [
+    {
+      "name": "Patagonia",
+      "entity_id": "7D458250-9644-4B52-AFFC-02271FFFC725",
+      "types": [
+        "urn:entity:locality"
+      ]
+    },
+    {
+      "name": "Patagonia",
+      "entity_id": "DB4CE34E-3A63-4947-946F-9D52502C5762",
+      "types": [
+        "urn:entity:brand"
+      ]
+    },
+    {
+      "name": "Patagonia",
+      "entity_id": "2D965AE5-6159-478B-BD8A-F0126B382EB9",
+      "types": [
+        "urn:entity:place"
+      ]
+    },
+    {
+      "name": "Patagônia",
+      "entity_id": "EE26CAD0-7B13-436F-8DFB-10AD5DDECC44",
+      "types": [
+        "urn:entity:locality"
+      ]
+    },
+    {
+      "name": "Patagonia",
+      "entity_id": "F85BB018-6526-4742-9DB0-64A878B9DBE9",
+      "types": [
+        "urn:entity:place"
+      ]
+    }
+  ]
+}

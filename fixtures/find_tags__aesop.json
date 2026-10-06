@@ -1,0 +1,39 @@
+{
+  "tags": [
+    {
+      "id": "urn:tag:keyword:qloo:aesop",
+      "name": "Aesop",
+      "category": "urn:tag:keyword:qloo",
+      "type": "urn:tag:keyword:qloo",
+      "popularity": 0.9756942865078019
+    },
+    {
+      "id": "urn:tag:author:qloo:aesop",
+      "name": "Aesop",
+      "category": "urn:tag:author:qloo",
+      "type": "urn:tag:author:qloo",
+      "popularity": 0.9150317870210681
+    },
+    {
+      "id": "urn:tag:similar_brand:qloo:aesop",
+      "name": "Aesop",
+      "category": "urn:tag:similar_brand:qloo",
+      "type": "urn:tag:similar_brand:qloo",
+      "popularity": 0.9985061961560254
+    },
+    {
+      "id": "urn:tag:competitor_brand:qloo:aesop",
+      "name": "Aesop",
+      "category": "urn:tag:competitor_brand:qloo",
+      "type": "urn:tag:competitor_brand:qloo",
+      "popularity": 0.9959709159478307
+    },
+    {
+      "id": "urn:tag:influenced_by:qloo:aesop_rock",
+      "name": "Aesop Rock",
+      "category": "urn:tag:influenced_by:qloo",
+      "type": "urn:tag:influenced_by:qloo",
+      "popularity": 0.9785693853388717
+    }
+  ]
+}

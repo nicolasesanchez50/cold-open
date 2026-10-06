@@ -1,0 +1,39 @@
+{
+  "tags": [
+    {
+      "id": "urn:tag:keyword:qloo:patagonia",
+      "name": "Patagonia",
+      "category": "urn:tag:keyword:qloo",
+      "type": "urn:tag:keyword:qloo",
+      "popularity": 0.9846525717912343
+    },
+    {
+      "id": "urn:tag:setting:qloo:patagonia",
+      "name": "Patagonia",
+      "category": "urn:tag:setting:qloo",
+      "type": "urn:tag:setting:qloo",
+      "popularity": 0.987596613426751
+    },
+    {
+      "id": "urn:tag:setting:qloo:patagonia_region",
+      "name": "Patagonia Region",
+      "category": "urn:tag:setting:qloo",
+      "type": "urn:tag:setting:qloo",
+      "popularity": 0.9877849588506876
+    },
+    {
+      "id": "urn:tag:characteristic:qloo:patagonian",
+      "name": "Patagonian",
+      "category": "urn:tag:characteristic:qloo",
+      "type": "urn:tag:characteristic:qloo",
+      "popularity": 0.9793832449230383
+    },
+    {
+      "id": "urn:tag:setting:qloo:patagonian_region",
+      "name": "Patagonian Region",
+      "category": "urn:tag:setting:qloo",
+      "type": "urn:tag:setting:qloo",
+      "popularity": 0.9854721901462512
+    }
+  ]
+}

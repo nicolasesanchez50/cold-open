@@ -1,0 +1,64 @@
+{
+  "recommendations": [
+    {
+      "name": "Chet Faker",
+      "affinity": 0.964716034615377,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "Ásgeir",
+      "affinity": 0.9560543440786288,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "Rhye",
+      "affinity": 0.9509874863763566,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "RY X",
+      "affinity": 0.9502535887518072,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "Matt Corby",
+      "affinity": 0.9491247129266471,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "Junip",
+      "affinity": 0.9475701403908399,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "Angus & Julia Stone",
+      "affinity": 0.9460111939921431,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "Ben Howard",
+      "affinity": 0.9452995446448035,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "London Grammar",
+      "affinity": 0.9417512728731708,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "Angus Stone",
+      "affinity": 0.9416657413865351,
+      "category": "music",
+      "evidence": null
+    }
+  ]
+}

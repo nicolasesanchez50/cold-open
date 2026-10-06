@@ -1,0 +1,64 @@
+{
+  "recommendations": [
+    {
+      "name": "Markova",
+      "affinity": 0.9927195442249201,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Tucci",
+      "affinity": 0.9893625990834363,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Grimoldi",
+      "affinity": 0.988003914985851,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Wanama",
+      "affinity": 0.9862935115949535,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Paula Cahen D'anvers",
+      "affinity": 0.9857654807840868,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Kosiuko",
+      "affinity": 0.9852078447257304,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Valdez",
+      "affinity": 0.9846967706070232,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Prüne",
+      "affinity": 0.9818417614473061,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Jazmín Chebar",
+      "affinity": 0.9808895360964732,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Las Pepas",
+      "affinity": 0.9803687013901388,
+      "category": "brands",
+      "evidence": null
+    }
+  ]
+}

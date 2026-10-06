@@ -19,9 +19,20 @@ if (asJson) {
   console.log(JSON.stringify(result, null, 2));
 } else {
   console.log(`Cold-Open leads for: ${result.subject.name}`);
-  console.log(`Resolved Qloo tag: ${result.subject.resolved_tag.name} (${result.subject.resolved_tag.id})`);
-  if (result.subject.alternative_tags.length) {
-    console.log(`Alternatives considered: ${result.subject.alternative_tags.map((t) => t.name).join(', ')}`);
+  const s = result.subject;
+  console.log(
+    `Resolved Qloo entity: ${s.resolved_entity.name} (${s.resolved_entity.entity_id})` +
+      ` [${(s.resolved_entity.types || []).join(', ')}]`,
+  );
+  if (s.resolved_tag) {
+    console.log(`Resolved Qloo tag: ${s.resolved_tag.name} (${s.resolved_tag.id})`);
+  }
+  if (s.alternative_entities?.length) {
+    console.log(
+      `Alternatives considered: ${s.alternative_entities
+        .map((e) => `${e.name} [${(e.types || []).join('/') || 'unknown'}]`)
+        .join(', ')}`,
+    );
   }
   console.log('');
   for (const lead of result.leads) {

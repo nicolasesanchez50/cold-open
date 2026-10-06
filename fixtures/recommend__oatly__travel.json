@@ -1,0 +1,64 @@
+{
+  "recommendations": [
+    {
+      "name": "Gothenburg",
+      "affinity": 0.9702775983272173,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Stockholm",
+      "affinity": 0.961747363164131,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Copenhagen",
+      "affinity": 0.956849409586637,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Oslo",
+      "affinity": 0.95521332723491,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Malmö",
+      "affinity": 0.9532719633827372,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Trondheim",
+      "affinity": 0.9517450839099187,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Stavanger",
+      "affinity": 0.9494457382488064,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Ystad",
+      "affinity": 0.9479596008447717,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Bergen",
+      "affinity": 0.9462796787698903,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Tromsø",
+      "affinity": 0.9411759911616039,
+      "category": "travel",
+      "evidence": null
+    }
+  ]
+}

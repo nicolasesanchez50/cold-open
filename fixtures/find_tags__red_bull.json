@@ -1,0 +1,39 @@
+{
+  "tags": [
+    {
+      "id": "urn:tag:keyword:media:red_bull",
+      "name": "red bull",
+      "category": "urn:tag:keyword:media",
+      "type": "urn:tag:keyword:media",
+      "popularity": 0.9817369350201234
+    },
+    {
+      "id": "urn:tag:keyword:media:reference_to_red_bull",
+      "name": "reference to red bull",
+      "category": "urn:tag:keyword:media",
+      "type": "urn:tag:keyword:media",
+      "popularity": 0.9643247211857119
+    },
+    {
+      "id": "urn:tag:competitor_brand:qloo:red_bull",
+      "name": "Red Bull",
+      "category": "urn:tag:competitor_brand:qloo",
+      "type": "urn:tag:competitor_brand:qloo",
+      "popularity": 0.9875655890554187
+    },
+    {
+      "id": "urn:tag:product_line:qloo:red_bull_energy_drink",
+      "name": "Red Bull Energy Drink",
+      "category": "urn:tag:product_line:qloo",
+      "type": "urn:tag:product_line:qloo",
+      "popularity": 0.9767474300431843
+    },
+    {
+      "id": "urn:tag:keyword:qloo:red_bull",
+      "name": "Red Bull",
+      "category": "urn:tag:keyword:qloo",
+      "type": "urn:tag:keyword:qloo",
+      "popularity": 0.9358955903970478
+    }
+  ]
+}

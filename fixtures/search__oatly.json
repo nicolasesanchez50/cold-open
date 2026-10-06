@@ -1,0 +1,39 @@
+{
+  "results": [
+    {
+      "name": "Oatly",
+      "entity_id": "012081EE-E2BA-420E-9904-417CAF65214B",
+      "types": [
+        "urn:entity:brand"
+      ]
+    },
+    {
+      "name": "Oatly AB",
+      "entity_id": "20F4E25E-71F4-42C6-883C-EEE29FDD2F0F",
+      "types": [
+        "urn:entity:place"
+      ]
+    },
+    {
+      "name": "Oatly Inc.",
+      "entity_id": "F8FC0A0A-162B-4E7D-92DC-9BE7144868B3",
+      "types": [
+        "urn:entity:place"
+      ]
+    },
+    {
+      "name": "Oatly Soft Serve Pop-Up Store",
+      "entity_id": "407600ED-2F0D-45C5-841F-2D524A77265C",
+      "types": [
+        "urn:entity:place"
+      ]
+    },
+    {
+      "name": "OATLY POP-UP",
+      "entity_id": "A1CE8086-0CBE-40CB-80FA-6D123E15ECA7",
+      "types": [
+        "urn:entity:place"
+      ]
+    }
+  ]
+}

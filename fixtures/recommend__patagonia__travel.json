@@ -1,0 +1,64 @@
+{
+  "recommendations": [
+    {
+      "name": "Moab",
+      "affinity": 0.9835463415829624,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Crested Butte",
+      "affinity": 0.9748552693578002,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Steamboat Springs",
+      "affinity": 0.9686487170602958,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Telluride",
+      "affinity": 0.9659790078300611,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Glenwood Springs",
+      "affinity": 0.9549595432742527,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Ouray",
+      "affinity": 0.9543535547877737,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Boulder",
+      "affinity": 0.9494071562195887,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Durango",
+      "affinity": 0.9466919651102474,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Vail",
+      "affinity": 0.9450878532806054,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Winter Park",
+      "affinity": 0.9449522935494288,
+      "category": "travel",
+      "evidence": null
+    }
+  ]
+}

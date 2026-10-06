@@ -1,0 +1,39 @@
+{
+  "results": [
+    {
+      "name": "Aesop",
+      "entity_id": "6F3B5CAA-AC33-4B29-996D-CD070526CAAA",
+      "types": [
+        "urn:entity:author"
+      ]
+    },
+    {
+      "name": "Aesop",
+      "entity_id": "32F867B9-E6DF-44C3-BCE4-40160C7ED5E4",
+      "types": [
+        "urn:entity:brand"
+      ]
+    },
+    {
+      "name": "Aesop",
+      "entity_id": "11A19453-C8AF-4B08-A8DC-CC0DCFB38516",
+      "types": [
+        "urn:entity:artist"
+      ]
+    },
+    {
+      "name": "Aesop Rock",
+      "entity_id": "2AEEC3F3-AA13-4CC2-8374-B9AC882FD935",
+      "types": [
+        "urn:entity:artist"
+      ]
+    },
+    {
+      "name": "Aesop’s Fables",
+      "entity_id": "7208E953-11A8-4CC7-8F1B-962C07DE3AC4",
+      "types": [
+        "urn:entity:book"
+      ]
+    }
+  ]
+}

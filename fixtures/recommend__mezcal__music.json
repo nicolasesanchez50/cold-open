@@ -1,0 +1,64 @@
+{
+  "recommendations": [
+    {
+      "name": "No Te Va Gustar",
+      "affinity": 0.9797506027493497,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "Los Tipitos",
+      "affinity": 0.9795104784092591,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "Bersuit Vergarabat",
+      "affinity": 0.9787674775583954,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "Vicentico",
+      "affinity": 0.9778830667618679,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "Catupecu Machu",
+      "affinity": 0.9770418422470789,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "Fito Páez",
+      "affinity": 0.9765560794884315,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "Los Piojos",
+      "affinity": 0.9764892570858711,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "Estelares",
+      "affinity": 0.9763389876754387,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "León Gieco",
+      "affinity": 0.9756604251989646,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "Divididos",
+      "affinity": 0.9756591765532525,
+      "category": "music",
+      "evidence": null
+    }
+  ]
+}

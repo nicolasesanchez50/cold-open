@@ -6,29 +6,38 @@
 //               `access-control-allow-origin: *` and `allow-headers: *`
 //               (verified by probe), so the browser may call it directly —
 //               no backend proxy is needed for the hosted demo.
-//   fixture  -> fetches the recorded responses in fixtures/ so the pipeline
-//               runs keyless (development and tests before the event
-//               credential arrives). The UI must label fixture output as
-//               sample data — those numbers are development fixtures, not
-//               Qloo results.
+//   fixture  -> fetches the responses recorded in fixtures/ by
+//               scripts/record_fixtures.py (captured from the live hackathon
+//               API, field selection only) so the page runs keyless. The UI
+//               labels them RECORDED — real Qloo output, not a live call,
+//               and definitely not invented numbers.
 //
-// Request shapes mirror the event harness (`qloo exec`) exactly:
+// Request shapes mirror the Node transport (`qloo api`) exactly:
 //   find_tags  -> GET /v2/tags?filter.query=...&feature.semantic_search=true&take=...
-//   recommend  -> GET /v2/insights?filter.type=urn:entity:...&signal.interests.tags=...
+//   recommend  -> GET /v2/insights?filter.type=urn:entity:...&signal.interests.entities=...
 //                 (GET only; parameters belong in the query string)
+//   search     -> GET /search?query=...
+//
+// The signal is an ENTITY id, not a tag id: tag signals only move the
+// affinity needle when the tag is graph-connected to the requested entity
+// type — for most subject/type pairs the API answers with the same default
+// list and a constant affinity (0.7649962877984056, observed 2026-10-06),
+// so every subject looked identical. Entity signals return subject-dependent
+// results with varying affinity across all supported types.
+
+import {
+  INSIGHTS_TYPE,
+  SUPPORTED_INSIGHTS_TYPES,
+  compactTag,
+  entitiesToLeads,
+  normalizeEntities,
+} from '../core/qloo_shapes.mjs';
+
+export { INSIGHTS_TYPE, SUPPORTED_INSIGHTS_TYPES };
 
 const BASE = 'https://hackathon.api.qloo.com';
 const FIXTURE_BASE = 'fixtures/';
 const KEY_STORAGE = 'coldopen.qloo_api_key';
-
-// Bucket query category -> Insights filter.type (event entity types).
-const INSIGHTS_TYPE = {
-  brands: 'urn:entity:brand',
-  music: 'urn:entity:music_artist',
-  podcasts: 'urn:entity:podcast',
-  dining: 'urn:entity:place:restaurant',
-  travel: 'urn:entity:place',
-};
 
 export class QlooError extends Error {
   constructor(op, message, { cause } = {}) {
@@ -137,36 +146,15 @@ function resultArray(response, key) {
   return response?.[key] ?? [];
 }
 
-function compactTag(t) {
-  if (!t || typeof t !== 'object') return undefined;
-  return {
-    id: t.id ?? t.tag_id,
-    name: t.name,
-    category: t.category ?? t.type,
-    type: t.type ?? t.subtype,
-    popularity: t.popularity,
-  };
-}
-
-// Evidence must come from the API, never be invented: only fields the
-// response actually carries are surfaced (see pitchFor, which drops missing
-// evidence rather than asserting it).
-function evidenceFor(entity) {
-  const explain = entity?.query?.explainability ?? entity?.explainability;
-  const evidence = {};
-  const correlated =
-    explain?.correlated_categories ??
-    entity?.properties?.correlated_categories ??
-    entity?.correlated_categories;
-  if (Array.isArray(correlated) && correlated.length) {
-    evidence.correlated_categories = correlated;
-  }
-  const overlap = explain?.audience_overlap ?? entity?.properties?.audience_overlap;
-  if (overlap !== undefined && overlap !== null) evidence.audience_overlap = overlap;
-  return Object.keys(evidence).length ? evidence : null;
-}
-
 export const browserQloo = {
+  async search(query, limit = 5) {
+    if (mode() === 'live') {
+      const res = await liveGet('search', '/search', { query, take: limit });
+      return { results: normalizeEntities(res?.results ?? res).slice(0, limit) };
+    }
+    return fixtureGet('search', { query, limit });
+  },
+
   async findTags(query, limit = 5) {
     if (mode() === 'live') {
       const res = await liveGet('find_tags', '/v2/tags', {
@@ -179,28 +167,20 @@ export const browserQloo = {
     return fixtureGet('find_tags', { query, limit });
   },
 
-  async recommend({ signal, category, limit = 10 }) {
+  async recommend({ signal, category, limit = 10, query }) {
     if (mode() === 'live') {
       const filterType = INSIGHTS_TYPE[category];
       if (!filterType) throw new QlooError('recommend', `unknown category "${category}"`);
       const res = await liveGet('recommend', '/v2/insights', {
         'filter.type': filterType,
-        'signal.interests.tags': signal,
+        'signal.interests.entities': signal,
         take: limit,
         'feature.explainability': 'true',
       });
       return {
-        results: resultArray(res, 'entities')
-          .map((entity) => ({
-            name: entity?.name,
-            affinity: entity?.affinity ?? entity?.query?.affinity ?? 0,
-            category,
-            evidence: evidenceFor(entity),
-          }))
-          .filter((e) => e.name)
-          .slice(0, limit),
+        results: entitiesToLeads(resultArray(res, 'entities'), category).slice(0, limit),
       };
     }
-    return fixtureGet('recommend', { signal, category, limit });
+    return fixtureGet('recommend', { signal, category, limit, query });
   },
 };

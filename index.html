@@ -23,6 +23,7 @@
   #mode-banner { display: block; padding: .5rem .75rem; border-radius: 6px; font-size: .9rem; margin: 1rem 0; }
   #mode-banner[data-mode="fixture"] { background: #8a6d1d33; border: 1px solid #8a6d1d; }
   #mode-banner[data-mode="live"] { background: #1d6d3a33; border: 1px solid #1d6d3a; }
+  #recorded-hint { color: #777; font-size: .85rem; margin: .25rem 0 0; }
   #key-form { margin-top: 2rem; padding-top: 1rem; border-top: 1px dashed #8886; }
   #key-form label { display: block; font-size: .9rem; color: #777; margin-bottom: .35rem; }
   footer { margin-top: 2.5rem; font-size: .85rem; color: #777; }
@@ -35,11 +36,12 @@
 <div id="mode-banner"></div>
 
 <form id="f">
-  <input name="brand" placeholder="Brand or product (e.g. Mezcal)" required>
+  <input name="brand" placeholder="Brand or product (e.g. Patagonia)" required>
   <input name="category" placeholder="Category (optional)">
   <button>Generate leads</button>
 </form>
 <div id="status"></div>
+<p id="recorded-hint"></p>
 <div id="out"></div>
 
 <form id="key-form">

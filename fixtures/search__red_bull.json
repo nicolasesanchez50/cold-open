@@ -1,0 +1,39 @@
+{
+  "results": [
+    {
+      "name": "Red Bull",
+      "entity_id": "409FAF5A-BC5F-4DC3-943D-E3B5F20B471D",
+      "types": [
+        "urn:entity:brand"
+      ]
+    },
+    {
+      "name": "Red Bull Racing",
+      "entity_id": "776152C5-ED96-4A52-98A7-A393D4EDA478",
+      "types": [
+        "urn:entity:brand"
+      ]
+    },
+    {
+      "name": "Red Bull Arena",
+      "entity_id": "86C85F03-5461-4397-A915-405E16AF1ED7",
+      "types": [
+        "urn:entity:place"
+      ]
+    },
+    {
+      "name": "Red Bull Station",
+      "entity_id": "B76D3E9F-C21D-4456-AC03-9718F0283BA7",
+      "types": [
+        "urn:entity:place"
+      ]
+    },
+    {
+      "name": "Red Bull Arena",
+      "entity_id": "A61EBF91-C751-4984-BE89-E41ED6F4E0B2",
+      "types": [
+        "urn:entity:place"
+      ]
+    }
+  ]
+}

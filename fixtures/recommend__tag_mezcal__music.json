@@ -1,6 +1,0 @@
-{
-  "recommendations": [
-    { "name": "Tyler, the Creator", "affinity": 0.84, "category": "music", "evidence": { "correlated_categories": ["music", "fashion"], "audience_overlap": 71 } },
-    { "name": "Khruangbin", "affinity": 0.77, "category": "music", "evidence": { "correlated_categories": ["music", "festivals"], "audience_overlap": 61 } }
-  ]
-}

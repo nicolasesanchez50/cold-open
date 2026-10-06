@@ -1,0 +1,64 @@
+{
+  "recommendations": [
+    {
+      "name": "Bahamas",
+      "affinity": 0.9704500410061961,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "The Head and the Heart",
+      "affinity": 0.9670531356781848,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "Houndmouth",
+      "affinity": 0.9653675443374148,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "Lord Huron",
+      "affinity": 0.9638898480256125,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "Gregory Alan Isakov",
+      "affinity": 0.9632860140349626,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "The Milk Carton Kids",
+      "affinity": 0.9594771253339683,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "The Lumineers",
+      "affinity": 0.9591666291068691,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "Shakey Graves",
+      "affinity": 0.9564660399557318,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "The New Basement Tapes",
+      "affinity": 0.9557174500194797,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "The Barr Brothers",
+      "affinity": 0.955105127478785,
+      "category": "music",
+      "evidence": null
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "recommendations": [
+    {
+      "name": "The Tai Lopez Show",
+      "affinity": 0.9664641826479206,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "The Tim Ferriss Show",
+      "affinity": 0.9308159828156487,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "The GaryVee Audio Experience",
+      "affinity": 0.9273189249375009,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "The Cardone Zone",
+      "affinity": 0.9163859211053937,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "The Dropout Degree with Josh King Madrid",
+      "affinity": 0.9152631969443105,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "The Art of Charm",
+      "affinity": 0.912589891745954,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "Dan Lok Show",
+      "affinity": 0.9098487042928265,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "Tom Bilyeu's Impact Theory",
+      "affinity": 0.9088147786892701,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "The Joe Rogan Experience",
+      "affinity": 0.9072401976721186,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "REAL AF with Andy Frisella",
+      "affinity": 0.9071634736973951,
+      "category": "podcasts",
+      "evidence": null
+    }
+  ]
+}

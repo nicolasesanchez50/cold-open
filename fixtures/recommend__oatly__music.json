@@ -1,0 +1,64 @@
+{
+  "recommendations": [
+    {
+      "name": "RY X",
+      "affinity": 0.9538567275407379,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "Ásgeir",
+      "affinity": 0.9432613165453089,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "Ben Howard",
+      "affinity": 0.937667996268579,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "Rhye",
+      "affinity": 0.9369121717224769,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "Michael Kiwanuka",
+      "affinity": 0.9365765869356609,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "Låpsley",
+      "affinity": 0.9359086818552728,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "Nick Mulvey",
+      "affinity": 0.9351714575144223,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "Junip",
+      "affinity": 0.9345083978006304,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "Lianne La Havas",
+      "affinity": 0.9311613895578292,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "Júníus Meyvant",
+      "affinity": 0.929489381520048,
+      "category": "music",
+      "evidence": null
+    }
+  ]
+}

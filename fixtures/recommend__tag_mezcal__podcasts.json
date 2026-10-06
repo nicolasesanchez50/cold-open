@@ -1,5 +1,0 @@
-{
-  "recommendations": [
-    { "name": "The Dave Chang Show", "affinity": 0.63, "category": "podcasts", "evidence": { "correlated_categories": ["podcasts", "dining"], "audience_overlap": 44 } }
-  ]
-}

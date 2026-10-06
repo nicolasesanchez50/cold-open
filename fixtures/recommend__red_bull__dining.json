@@ -1,0 +1,64 @@
+{
+  "recommendations": [
+    {
+      "name": "My Spanishsteps Guest House Rome Italy",
+      "affinity": 0.9456715591070167,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "Aiguille du Midi - Hôtel & Restaurant",
+      "affinity": 0.9425560404215091,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "Das Apart Hotel Olympia Tirol",
+      "affinity": 0.942272957393303,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "Blue Waves Hotel",
+      "affinity": 0.9411174625061933,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "Riad Cascades d'Ouzoud",
+      "affinity": 0.938979440096373,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "Camp Almissa",
+      "affinity": 0.9389504683897515,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "Old Bruges",
+      "affinity": 0.9373448847871965,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "Restaurant Palau de Gel",
+      "affinity": 0.9353330395628111,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "HSM Son Verí",
+      "affinity": 0.9344610678548634,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "Moxy London Stratford",
+      "affinity": 0.9343930444896699,
+      "category": "dining",
+      "evidence": null
+    }
+  ]
+}

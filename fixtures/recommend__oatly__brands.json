@@ -1,0 +1,64 @@
+{
+  "recommendations": [
+    {
+      "name": "Natural Cycles",
+      "affinity": 0.8965450956120391,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Oddbox",
+      "affinity": 0.8923149217697119,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Moving Mountains Foods",
+      "affinity": 0.887129691966526,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Thinx",
+      "affinity": 0.8830974621963121,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Ella Mills",
+      "affinity": 0.8830948957288605,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Joe & The Juice",
+      "affinity": 0.8792685084802889,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Headspace",
+      "affinity": 0.8760441490742957,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Apple Fitness+",
+      "affinity": 0.8760164504560867,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "The Vurger Co.",
+      "affinity": 0.8741147671908389,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Black Lives Matter",
+      "affinity": 0.8739481346604742,
+      "category": "brands",
+      "evidence": null
+    }
+  ]
+}

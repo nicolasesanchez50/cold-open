@@ -1,6 +1,0 @@
-{
-  "recommendations": [
-    { "name": "Oaxaca tourism", "affinity": 0.66, "category": "travel", "evidence": { "correlated_categories": ["travel"], "audience_overlap": 49 } },
-    { "name": "Rock climbing destinations", "affinity": 0.72, "category": "activities", "evidence": { "correlated_categories": ["travel", "activities"], "audience_overlap": 55 } }
-  ]
-}

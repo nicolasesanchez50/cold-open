@@ -1,6 +1,0 @@
-{
-  "recommendations": [
-    { "name": "Natural wine bars", "affinity": 0.69, "category": "dining", "evidence": { "correlated_categories": ["dining"], "audience_overlap": 52 } },
-    { "name": "Oaxacan tasting menus", "affinity": 0.65, "category": "dining", "evidence": { "correlated_categories": ["dining", "travel"], "audience_overlap": 47 } }
-  ]
-}

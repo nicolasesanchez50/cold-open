@@ -1,7 +1,0 @@
-{
-  "recommendations": [
-    { "name": "Patagonia", "affinity": 0.74, "category": "brands", "evidence": { "correlated_categories": ["fashion", "travel"], "audience_overlap": 58 } },
-    { "name": "Aesop", "affinity": 0.68, "category": "brands", "evidence": { "correlated_categories": ["beauty", "dining"], "audience_overlap": 51 } },
-    { "name": "Casa Amigos Mezcal", "affinity": 0.91, "category": "alcoholic_drinks", "evidence": { "correlated_categories": ["beverages"], "audience_overlap": 80 } }
-  ]
-}

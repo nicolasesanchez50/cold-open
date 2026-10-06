@@ -1,0 +1,64 @@
+{
+  "recommendations": [
+    {
+      "name": "The Rich Roll Podcast",
+      "affinity": 0.9717230956605641,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "Feel Good Podcast with Kimberly Snyder",
+      "affinity": 0.9247614147554395,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "For The Life Of Me",
+      "affinity": 0.9232633394820935,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "The Minimalists",
+      "affinity": 0.9215975643162746,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "10% Happier with Dan Harris",
+      "affinity": 0.9182424846954743,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "Good Life Project",
+      "affinity": 0.9161596579783707,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "The Outlier Health Podcast",
+      "affinity": 0.9149305644315233,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "The Proof with Simon Hill",
+      "affinity": 0.9143787516269157,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "The mindbodygreen Podcast",
+      "affinity": 0.9140954433000656,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "The Life Stylist",
+      "affinity": 0.9131243981912786,
+      "category": "podcasts",
+      "evidence": null
+    }
+  ]
+}

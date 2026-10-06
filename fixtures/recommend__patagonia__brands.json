@@ -1,0 +1,64 @@
+{
+  "recommendations": [
+    {
+      "name": "Recreational Equipment Inc",
+      "affinity": 0.9706037605494069,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "The North Face",
+      "affinity": 0.9566991631255227,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Backcountry",
+      "affinity": 0.9542531295279105,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Backpacker Magazine",
+      "affinity": 0.9514064218789732,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Osprey",
+      "affinity": 0.941727169948367,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Arc'teryx",
+      "affinity": 0.9405066656647758,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Smartwool",
+      "affinity": 0.9393390521237498,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Icebreaker",
+      "affinity": 0.9352271363603957,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "American Alpine Club",
+      "affinity": 0.9351462119277661,
+      "category": "brands",
+      "evidence": null
+    },
+    {
+      "name": "Fjällräven",
+      "affinity": 0.932167063819836,
+      "category": "brands",
+      "evidence": null
+    }
+  ]
+}

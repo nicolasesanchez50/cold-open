@@ -1,0 +1,64 @@
+{
+  "recommendations": [
+    {
+      "name": "Skrillex",
+      "affinity": 0.9422007752302551,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "Swedish House Mafia",
+      "affinity": 0.940091727792557,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "Avicii",
+      "affinity": 0.938287981339564,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "Tiësto",
+      "affinity": 0.9379344203447575,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "deadmau5",
+      "affinity": 0.9378662293772606,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "The Prodigy",
+      "affinity": 0.9290098541146263,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "Deorro",
+      "affinity": 0.9277552748542053,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "Benny Benassi",
+      "affinity": 0.9269201177412837,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "Nicky Romero",
+      "affinity": 0.9267652234023903,
+      "category": "music",
+      "evidence": null
+    },
+    {
+      "name": "Afrojack",
+      "affinity": 0.926690151141051,
+      "category": "music",
+      "evidence": null
+    }
+  ]
+}

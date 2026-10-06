@@ -25,18 +25,38 @@ export function mount() {
   const status = el('status');
   const banner = el('mode-banner');
   const keyForm = el('key-form');
+  const hint = el('recorded-hint');
   if (!form || !out || !status) return;
 
   function renderMode() {
-    if (!banner) return;
-    if (mode() === 'live') {
-      banner.textContent = 'Mode: LIVE Qloo API';
-      banner.dataset.mode = 'live';
-    } else {
-      banner.textContent =
-        'Mode: SAMPLE DATA — development fixtures, no live Qloo call. ' +
-        'Add an event API key below to run against Qloo.';
-      banner.dataset.mode = 'fixture';
+    if (banner) {
+      if (mode() === 'live') {
+        banner.textContent = 'Mode: LIVE Qloo API — every result below is a fresh call.';
+        banner.dataset.mode = 'live';
+      } else {
+        banner.textContent =
+          'Mode: RECORDED QLOO RESPONSES — captured from the live hackathon API by ' +
+          'scripts/record_fixtures.py (field selection only, nothing invented), shown ' +
+          'keyless. Save an event API key below to run live queries on any subject.';
+        banner.dataset.mode = 'fixture';
+      }
+    }
+    if (hint) {
+      if (mode() === 'live') {
+        hint.textContent = '';
+      } else {
+        fetch('fixtures/index.json', { cache: 'no-store' })
+          .then((r) => (r.ok ? r.json() : null))
+          .then((idx) => {
+            if (idx?.subjects?.length) {
+              hint.textContent = `Recorded subjects: ${idx.subjects.join(', ')}. ` +
+                'Any other subject needs an event API key (live mode).';
+            }
+          })
+          .catch(() => {
+            /* no manifest — the hint simply stays empty */
+          });
+      }
     }
   }
   renderMode();
@@ -67,10 +87,16 @@ export function mount() {
     status.textContent = 'Querying Qloo…';
     try {
       const data = await demoRun(brand, category);
+      const subject = data.subject;
+      const entity = subject.resolved_entity;
+      const tag = subject.resolved_tag;
+      const alternatives = subject.alternative_entities ?? [];
       status.textContent =
-        `Resolved "${data.subject.name}" → ` +
-        `${data.subject.resolved_tag.name} (${data.subject.resolved_tag.id})` +
-        ` · ${mode() === 'live' ? 'live Qloo data' : 'sample fixtures'}` +
+        `Resolved "${subject.name}" → ${entity.name} (${entity.entity_id}) ` +
+        `[${(entity.types || []).join(', ')}]` +
+        (tag ? ` · tag ${tag.name}` : '') +
+        (alternatives.length ? ` · ${alternatives.length} alternative(s) considered` : '') +
+        ` · ${mode() === 'live' ? 'live Qloo data' : 'recorded Qloo responses'}` +
         ` · ${data.leads.length} leads`;
       out.innerHTML =
         data.leads

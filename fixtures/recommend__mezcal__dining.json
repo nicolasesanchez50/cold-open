@@ -1,0 +1,64 @@
+{
+  "recommendations": [
+    {
+      "name": "Las Petunias",
+      "affinity": 0.9686088462495483,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "Blest Palermo",
+      "affinity": 0.9662369981450646,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "Alchemy",
+      "affinity": 0.9628291062110728,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "Valence Argentina",
+      "affinity": 0.9619687644962517,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "París Crepas",
+      "affinity": 0.9618189888749801,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "Sullivan's Irish Pub",
+      "affinity": 0.961504284105511,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "The Panera Rosa",
+      "affinity": 0.9613997921938682,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "Cosi Mi Piace",
+      "affinity": 0.9610580689929067,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "Xalapa",
+      "affinity": 0.9607670235604223,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "Helados Italia",
+      "affinity": 0.960449095260883,
+      "category": "dining",
+      "evidence": null
+    }
+  ]
+}

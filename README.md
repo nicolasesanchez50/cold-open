@@ -32,22 +32,29 @@ nobody has the cross-category data to see them.
 
 ## Qloo workflows used
 
-- `find_tags` — entity resolution / disambiguation
-- `recommend` — cross-category affinity scan per bucket
+- `search` — entity resolution / disambiguation (the subject's entity id becomes the Insights signal)
+- `find_tags` — tag-space resolution kept as an auditable alternative reading
+- `recommend` — cross-category affinity scan per bucket (`/v2/insights`, entity signal)
 
-(via the hackathon harness `qloo exec`, the supported event surface)
+Built for the [Qloo Agentic Hackathon](https://qloo.devpost.com/). **Live demo:**
+<https://nicolasesanchez50.github.io/cold-open/>.
 
 ## Setup
 
-Requires Node.js 22.19+.
+Requires Node.js 22+ (the recorded/fixture mode needs nothing else).
 
 ```sh
-npm install --global @qloo/qloo-harness   # v0.1.26+
+git clone https://github.com/nicolasesanchez50/cold-open
+cd cold-open
+```
+
+For **live** API calls you need the Qloo event CLI and a key (from the hackathon
+API-key form):
+
+```sh
+npm install --global @qloo/qloo-harness   # v0.1.26+  (provides `qloo`)
 qloo setup --qloo                          # enter your event credential (hidden)
 qloo setup --status                        # expect "Qloo data: ready"
-
-git clone <this-repo>
-cd cold-open
 ```
 
 No npm dependencies — the demo server and pipeline are pure Node stdlib.
@@ -57,8 +64,17 @@ No npm dependencies — the demo server and pipeline are pure Node stdlib.
 CLI:
 
 ```sh
-node src/agent/cli.mjs Mezcal --category alcoholic_drinks
-node src/agent/cli.mjs "My Brand" --json
+node src/agent/cli.mjs Patagonia
+node src/agent/cli.mjs "Red Bull" --json
+```
+
+Live CLI (direct REST, same request shapes as the hosted demo):
+
+```sh
+export QLOO_API_KEY=<your event key>
+export QLOO_BASE_URL=https://hackathon.api.qloo.com
+export QLOO_TRUSTED_BASE_URL=https://hackathon.api.qloo.com
+COLDOPEN_QLOO_MODE=live node src/agent/cli.mjs Patagonia
 ```
 
 Web demo:
@@ -70,22 +86,31 @@ node src/web/server.mjs 3737
 
 ## Modes
 
-- **Fixture mode** (default): the pipeline runs against recorded responses in
-  `fixtures/` — no credential needed, deterministic, used by tests.
-- **Live mode**: `COLDOPEN_QLOO_MODE=live` routes calls through `qloo exec`
-  against the hackathon API (`https://hackathon.api.qloo.com`).
+- **Recorded mode** (default): the pipeline runs against responses recorded in
+  `fixtures/` by `scripts/record_fixtures.py` — captured from the live hackathon
+  API, field selection only, nothing invented. No credential needed, so the
+  hosted page works for any visitor. The page labels this state explicitly.
+- **Live mode**: a saved event API key (browser, localStorage) or
+  `COLDOPEN_QLOO_MODE=live` (CLI) routes every call to
+  `https://hackathon.api.qloo.com`.
+
+The event key is never committed, never embedded in the page, and never written
+to a fixture — visitors supply their own for live mode.
 
 ```sh
-export QLOO_BASE_URL=https://hackathon.api.qloo.com
-export QLOO_TRUSTED_BASE_URL=https://hackathon.api.qloo.com
-COLDOPEN_QLOO_MODE=live node src/agent/cli.mjs Mezcal
+QLOO_API_KEY=<your key> python3 scripts/record_fixtures.py   # re-record fixtures
 ```
 
 ## Tests
 
 ```sh
-node --test test/
+node --test
 ```
+
+The suite includes an API-contract test that pins every `filter.type` the
+project maps to the developer guide's supported list — an earlier revision
+shipped `urn:entity:music_artist` and `urn:entity:place:restaurant`, both of
+which the API rejects with HTTP 400.
 
 ## Responsible data handling
 
@@ -107,8 +132,16 @@ node --test test/
 - Scores describe taste affinity only — not budget fit, counterparty
   availability, exclusivity conflicts, or brand-safety concerns. A human
   partnership lead still qualifies the shortlist.
-- Fixture-mode fixtures are illustrative recordings, not live Qloo output;
-  they exist so the pipeline and tests run without a credential.
+- Recorded-mode fixtures are real Qloo responses captured on a fixed date, not
+  a live call — the page says so. Re-run `scripts/record_fixtures.py` to
+  refresh them; live mode always reflects the current graph.
+- Insights is queried with an **entity** signal. A **tag** signal only moves
+  the needle for tag/type pairs that are graph-connected; for most pairs the
+  API returns the same default list at a constant affinity (0.765), which
+  would make every subject look identical. Tag-signalled requests against
+  `urn:entity:place` additionally took 32–46 s (and 504s) in measurement.
+- `urn:entity:music_artist` and `urn:entity:place:restaurant` are not valid
+  `filter.type` values (HTTP 400); the supported list is pinned by a test.
 
 ## License
 

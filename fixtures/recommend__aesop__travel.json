@@ -1,0 +1,64 @@
+{
+  "recommendations": [
+    {
+      "name": "Shinjuku",
+      "affinity": 0.9709870029675111,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Naha",
+      "affinity": 0.9667650396727334,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Kyoto",
+      "affinity": 0.9665396808406056,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Tokyo",
+      "affinity": 0.9597900393867906,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Kobe-shi",
+      "affinity": 0.9571223157169649,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Minato",
+      "affinity": 0.9556159072239911,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Nikko",
+      "affinity": 0.9468458969855119,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Kanazawa",
+      "affinity": 0.9425733589872876,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Osaka",
+      "affinity": 0.9410562420373099,
+      "category": "travel",
+      "evidence": null
+    },
+    {
+      "name": "Okinawa",
+      "affinity": 0.9404941837400493,
+      "category": "travel",
+      "evidence": null
+    }
+  ]
+}

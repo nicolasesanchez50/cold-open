@@ -1,6 +1,39 @@
 {
   "tags": [
-    { "id": "tag:mezcal", "name": "Mezcal", "category": "beverages", "type": "alcoholic_drinks" },
-    { "id": "tag:mezcal_music", "name": "Mezcal", "category": "music", "type": "band" }
+    {
+      "id": "urn:tag:cuisine:qloo:mezcal",
+      "name": "Mezcal",
+      "category": "urn:tag:cuisine:qloo",
+      "type": "urn:tag:cuisine:qloo",
+      "popularity": 0.969420023333469
+    },
+    {
+      "id": "urn:tag:popular_food_item:qloo:mezcal",
+      "name": "Mezcal",
+      "category": "urn:tag:popular_food_item:qloo",
+      "type": "urn:tag:popular_food_item:qloo",
+      "popularity": 0.922717819754843
+    },
+    {
+      "id": "urn:tag:product_service:qloo:mezcal",
+      "name": "Mezcal",
+      "category": "urn:tag:product_service:qloo",
+      "type": "urn:tag:product_service:qloo",
+      "popularity": 0.9573208326847015
+    },
+    {
+      "id": "urn:tag:amenity:qloo:mezcal",
+      "name": "Mezcal",
+      "category": "urn:tag:amenity:qloo",
+      "type": "urn:tag:amenity:qloo",
+      "popularity": 0.9380473936150744
+    },
+    {
+      "id": "urn:tag:keyword:media:mezcal",
+      "name": "mezcal",
+      "category": "urn:tag:keyword:media",
+      "type": "urn:tag:keyword:media",
+      "popularity": 0.9389238712977942
+    }
   ]
 }

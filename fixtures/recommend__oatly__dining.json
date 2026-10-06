@@ -1,0 +1,64 @@
+{
+  "recommendations": [
+    {
+      "name": "DoubleTree by Hilton Amsterdam - NDSM Wharf",
+      "affinity": 0.9549721781752232,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "XO Hotels Van Gogh",
+      "affinity": 0.95205700921216,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "Steel Vintage Bikes Café",
+      "affinity": 0.9519689839166605,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "My Spanishsteps Guest House Rome Italy",
+      "affinity": 0.9487709674321565,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "Rembrandt Corner",
+      "affinity": 0.9483521256401887,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "Neumanns Café",
+      "affinity": 0.9482716900980243,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "Hotel Zoe by AMANO",
+      "affinity": 0.9473388002684084,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "'t Hotel",
+      "affinity": 0.9467638383621486,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "Hotel Library Amsterdam",
+      "affinity": 0.9464963425514294,
+      "category": "dining",
+      "evidence": null
+    },
+    {
+      "name": "Little Green Rabbit",
+      "affinity": 0.9459138271857094,
+      "category": "dining",
+      "evidence": null
+    }
+  ]
+}

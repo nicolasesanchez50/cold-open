@@ -1,0 +1,64 @@
+{
+  "recommendations": [
+    {
+      "name": "The Minimalists",
+      "affinity": 0.9624515906568307,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "Good Life Project",
+      "affinity": 0.9145480718961179,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "The Lively Show",
+      "affinity": 0.9049260905052637,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "Three Rules",
+      "affinity": 0.9039914627272602,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "Creative Pep Talk",
+      "affinity": 0.9006453185069927,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "Welcome to Almanac",
+      "affinity": 0.8970394707701204,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "Happier with Gretchen Rubin",
+      "affinity": 0.8944261968675632,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "The Lavendaire Lifestyle",
+      "affinity": 0.8942536423414701,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "Unlocking Us with Brené Brown",
+      "affinity": 0.8920049978526452,
+      "category": "podcasts",
+      "evidence": null
+    },
+    {
+      "name": "The Marie Forleo Podcast",
+      "affinity": 0.8910088750867806,
+      "category": "podcasts",
+      "evidence": null
+    }
+  ]
+}

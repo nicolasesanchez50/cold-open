@@ -1,16 +1,20 @@
-// Qloo harness client. Two modes:
-//   live    -> shells out to `qloo exec <op>` (requires QLOO_API_KEY via `qloo setup`)
-//   fixture -> reads recorded responses from fixtures/ so the whole pipeline
-//              runs keyless (dev + tests before the event credential arrives).
+// Qloo client. Two modes:
+//   live    -> `qloo api <command>` (search / insights / tags) plus the
+//              event harness `qloo exec <op>` for the remaining workflows.
+//              Requires QLOO_API_KEY and QLOO_BASE_URL/QLOO_TRUSTED_BASE_URL
+//              pointing at https://hackathon.api.qloo.com .
+//   fixture -> reads the recorded responses from fixtures/ so the whole
+//              pipeline runs keyless (dev + tests, and the hosted demo).
 //
 // Mode selection: COLDOPEN_QLOO_MODE=live|fixture, default fixture.
-// The client never sees or logs the API key; `qloo setup` owns the credential.
+// The client never logs the API key.
 
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { INSIGHTS_TYPE, entitiesToLeads, normalizeEntities } from '../core/qloo_shapes.mjs';
 
 const execFileP = promisify(execFile);
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -74,14 +78,64 @@ async function runLive(op, input) {
   }
 }
 
+// Deterministic REST commands (`qloo api ...`) — the same request shapes the
+// browser transport builds by hand, so both paths hit identical endpoints.
+async function runApi(args) {
+  let stdout;
+  try {
+    ({ stdout } = await execFileP(QLOO_BIN, ['api', ...args], {
+      timeout: TIMEOUT_MS,
+      maxBuffer: 16 * 1024 * 1024,
+    }));
+  } catch (e) {
+    throw new QlooError('api', e.killed ? 'timed out' : e.message, { cause: e });
+  }
+  try {
+    return JSON.parse(stdout);
+  } catch (e) {
+    throw new QlooError('api', '`qloo api` returned non-JSON output', { cause: e });
+  }
+}
+
+function rowsOf(payload) {
+  if (Array.isArray(payload)) return payload;
+  if (Array.isArray(payload?.results)) return payload.results;
+  if (Array.isArray(payload?.results?.entities)) return payload.results.entities;
+  if (Array.isArray(payload?.results?.tags)) return payload.results.tags;
+  return [];
+}
+
+async function runLiveOp(op, input) {
+  if (op === 'search') {
+    const limit = Number(input.limit ?? 5);
+    const payload = await runApi(['search', '--query', String(input.query ?? ''), '--take', String(limit), '--json']);
+    return { results: normalizeEntities(rowsOf(payload)).slice(0, limit) };
+  }
+  if (op === 'recommend') {
+    const filterType = INSIGHTS_TYPE[input.category];
+    if (!filterType) throw new QlooError('recommend', `unknown category "${input.category}"`);
+    const limit = Number(input.limit ?? 10);
+    const payload = await runApi([
+      'insights',
+      '--type', filterType,
+      '--signal-entities', String(input.signal),
+      '--take', String(limit),
+      '--json',
+    ]);
+    return { recommendations: entitiesToLeads(rowsOf(payload), input.category).slice(0, limit) };
+  }
+  return runLive(op, input);
+}
+
 export async function qlooExec(op, input) {
   if (typeof input !== 'object' || input === null) {
     throw new QlooError(op, 'input must be an object');
   }
-  return MODE === 'live' ? runLive(op, input) : runFixture(op, input);
+  return MODE === 'live' ? runLiveOp(op, input) : runFixture(op, input);
 }
 
 export const qloo = {
+  search: (query, limit = 5) => qlooExec('search', { query, limit }),
   findTags: (query, limit = 5) => qlooExec('find_tags', { query, limit }),
   describe: (entity) => qlooExec('describe', { entity }),
   recommend: (input) => qlooExec('recommend', input),

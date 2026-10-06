@@ -1,0 +1,12 @@
+{
+  "recorded_on": "2026-10-06T07:16:56Z",
+  "base": "https://hackathon.api.qloo.com",
+  "subjects": [
+    "Patagonia",
+    "Red Bull",
+    "Oatly",
+    "Aesop",
+    "Mezcal"
+  ],
+  "note": "Recorded live responses, field selection only. Regenerate with scripts/record_fixtures.py"
+}
